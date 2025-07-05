@@ -8,7 +8,6 @@ RUN pip install --upgrade pip
 COPY ./backend/requirements.txt .
 RUN pip install -r requirements.txt
 
-# static 수집
 RUN python manage.py collectstatic --noinput
 
 EXPOSE 8000
