@@ -20,8 +20,3 @@ def vote_project(request, pk):
         Evaluation.objects.create(project=project, value=value)
         return redirect('project_detail', pk=pk)
     return redirect('project_detail', pk=pk)
-
-def project_ranking(request):
-    projects = Project.objects.all()
-    sorted_projects = sorted(projects, key=lambda p: p.average_score(), reverse=True)
-    return render(request, 'develop/project_ranking.html', {'projects': sorted_projects})
