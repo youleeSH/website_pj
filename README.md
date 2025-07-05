@@ -44,28 +44,29 @@ website_pj/
 
 
 실행 방법
-
+```
 docker-compose up --build
-docker-compose exec backend python manage.py migrate  
+docker-compose exec backend python manage.py migrate
+```  
 
 
 관리자 계정
 
-ID : admin
-password : seo040302
+- ID : admin
+- password : seo040302
 
 
 접속
 
-사용자 : http://localhost/project/
-관리자 페이지 : http://localhost/admin/  
+- 사용자 : http://localhost/project/
+- 관리자 페이지 : http://localhost/admin/  
 
 
 GitHub
 
-https://github.com/youleeSH/website_pj  
+- https://github.com/youleeSH/website_pj  
 
 
 라이선스
 
-MIT License
+- MIT License
