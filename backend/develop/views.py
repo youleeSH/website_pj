@@ -1,9 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Project, Evaluation
-from django.http import HttpResponse
-
-def index(request):
-    return HttpResponse("Hello, world. You're at develop index.")
 
 def project_list(request):
     projects = Project.objects.all()
